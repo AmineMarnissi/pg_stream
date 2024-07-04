@@ -1,0 +1,8 @@
+<launch>
+
+    <!-- Launch the RTSP stream publishers -->
+    <node name="rtsp_all_publisher" pkg="pg_stream" type="rtsp_stream_publisher_all.py" output="screen">
+        <!-- Set parameters for RTSP stream URLs and topic names -->
+        <rosparam command="load" file="$(find pg_stream)/launch/rtsp_params.yaml"/>
+    </node>
+</launch>

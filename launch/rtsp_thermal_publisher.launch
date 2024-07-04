@@ -1,0 +1,11 @@
+<launch>
+    <!-- Declare parameters for RTSP stream URL and frame rate -->
+    <arg name="rtsp_stream_url" default="rtsp://root:En0vaR0b0tics@41.228.129.118:1026/axis-media/media.amp"/>
+    <arg name="frame_rate" default="30"/>
+
+    <!-- Launch the node with parameters -->
+    <node name="rtsp_stream_publisher" pkg="pg_stream" type="rtsp_stream_publisher.py" output="screen">
+        <param name="rtsp_stream_url" type="str" value="$(arg rtsp_stream_url)"/>
+        <param name="frame_rate" type="int" value="$(arg frame_rate)"/>
+    </node>
+</launch>

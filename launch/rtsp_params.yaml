@@ -1,0 +1,11 @@
+rtsp_stream_urls:
+  - rtsp://root:En0vaR0b0tics@41.228.129.118:1025/live1s4.sdp
+  - rtsp://root:En0vaR0b0tics@41.228.129.118:554/live1s4.sdp
+  - rtsp://root:En0vaR0b0tics@41.228.129.118:1027/axis-media/media.amp
+  - rtsp://root:En0vaR0b0tics@41.228.129.118:1026/axis-media/media.amp
+
+topic_names:
+  - rtsp_stream
+  - rtsp_rear
+  - rtsp_optical
+  - rtsp_thermal
